@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Task List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a simple task management application built using React and TypeScript and Tailwind CSS for styling.. The application allows users to manage their tasks effectively with features to add, complete, filter, delete, and sort tasks. It also includes the ability to persist tasks in local storage and load previous tasks from an external API.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add new tasks.
+- Mark tasks as complete.
+- Filter tasks based on their completion status.
+- Persist tasks in local storage.
+- Load previous tasks from an external API.
+- Delete tasks with a confirmation dialog.
+- Add due dates to tasks and sort them based on the due date.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Task Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Core Features
 
-### `npm test`
+1. **Add New Tasks**: Users can add new tasks to the list.
+2. **Mark Tasks as Complete**: Users can mark tasks as complete.
+3. **Filter Tasks**: Users can filter tasks based on their completion status.
+4. **Persist Tasks**: Tasks are saved in local storage to remain after a page refresh.
+5. **Load Previous Tasks**: Users can click a “Load previous tasks” button to fetch tasks from an external API.
+   - During the API call, the button is disabled and shows "Loading tasks…" until the posts are loaded.
+   - Present the fetched tasks in the same list layout as "Today’s Tasks".
+   - If an error occurs, display the message “Tasks could not be loaded.”
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Running the App
 
-### `npm run build`
+1. Install dependencies and start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`
+`npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Open http://localhost:3000 to view it in the browser.
